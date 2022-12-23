@@ -1,0 +1,662 @@
+@media screen and (max-width: 575px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+        width: auto;
+    }
+
+    .header {
+        padding-top: 15px;
+        padding-bottom: 17px;
+    }
+
+    .menu {
+        width: 100%;
+    }
+
+    .menu__inner__close {
+        right: 15px;
+        top: 15px;
+        z-index: 10;
+    }
+
+    .menu__inner__wrap__header {
+        z-index: 5;
+        padding-left: 25px;
+    }
+
+    .menu__inner__wrap__list__item__link {
+        font-size: 19px;
+        margin-left: 25px;
+    }
+
+    .menu__inner__wrap__list__item {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+
+    .header__wrap__logo__link {
+        width: 130px;
+        height: 42px;
+    }
+
+    .header__wrap__content__eye {
+        margin-right: 20px;
+    }
+
+    .promo__wrap {
+        padding-bottom: 50px;
+    }
+
+    .promo__wrap__content__title {
+        font-size: 28px;
+    }
+
+    .promo__wrap__content__subtitle {
+        font-size: 11px;
+        padding: 11px 15px 10px 15px;
+    }
+
+    .promo__wrap__content {
+        margin-top: 45px;
+    }
+
+    .promo__wrap__content__description {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .promo__wrap__content__btns {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: baseline;
+    }
+
+    .promo__wrap__content__btns__services {
+        width: 290px;
+        text-align: center;
+        padding: 16px;
+    }
+
+    .promo__wrap__content__btns__reception {
+        width: 290px;
+        text-align: center;
+        margin-top: 15px;
+        padding: 16px;
+    }
+
+    .promo__image__photo {
+        border-radius: 20px 20px 0 0;
+        height: auto;
+    }
+
+    .promo__image__experience {
+        left: 15px;
+        width: 106px;
+        height: 106px;
+        top: 25px;
+    }
+
+    .promo__image__experience__number {
+        font-size: 24px;
+    }
+
+    .promo__image__experience__text {
+        font-size: 12px;
+    }
+
+    .promo__image__info {
+        width: 290px;
+        padding-bottom: 20px;
+        padding-top: 23px;
+        bottom: 40px;
+    }
+
+    .promo__image__info__title {
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .promo__image__info__description {
+        font-size: 15px;
+    }
+
+    .about {
+        padding-top: 70px;
+    }
+
+    .about__header-mob__title {
+        font-size: 24px;
+    }
+
+    .about__wrap {
+        margin-top: 20px;
+    }
+
+    .about__wrap__photo {
+        border-radius: 5px;
+    }
+
+    .about__wrap__content__list__item {
+        font-size: 16px;
+    }
+
+    .about__wrap__content__list__item:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    .interior {
+        padding-top: 70px;
+    }
+
+    .title {
+        font-size: 26px !important;
+    }
+
+    .interior__header__btns {
+        display: none;
+    }
+
+    .interior__progress__btns {
+        display: flex;
+    }
+
+    .interior__progress__btns__el {
+        width: 45px;
+        height: 45px;
+    }
+
+    .interior__progress__btns__el__icon {
+        width: 18px;
+        height: 13px;
+    }
+
+    .interior__content {
+        padding-left: 15px;
+        margin-top: 15px;
+    }
+
+    .interior__content__wrap__inner__slider__photo__main {
+        height: 267px;
+    }
+
+    .team {
+        padding-top: 70px;
+    }
+
+    .team__header__subtitle__title {
+        font-size: 20px;
+    }
+
+    .team__header__wrap .title {
+        margin-top: 10px;
+    }
+
+    .team .team-mob {
+        padding-left: 15px;
+        padding-right: 5px;
+        margin-top: 20px;
+    }
+
+    .team .team-mob .team__swiper-mob__inner__slider__info {
+        width: 220px;
+    }
+
+    .team__wrap {
+        display: none;
+    }
+
+    .personal__wrap__content__info__name {
+        font-size: 24px;
+    }
+
+    .personal__wrap__content__info__biography__item span {
+        font-size: 18px;
+    }
+
+    .personal__wrap__content__info__biography__education__title {
+        font-size: 18px;
+    }
+
+    .services {
+        padding-top: 70px;
+    }
+
+    .services .title {
+        text-align: center;
+    }
+
+    .services__wrap__list__item__link {
+        width: 290px;
+        font-size: 18px;
+        padding: 15px 30px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .services__wrap__list {
+        align-items: center;
+        justify-content: center;
+        row-gap: 15px;
+        column-gap: 0;
+    }
+
+    .services__wrap {
+        margin-top: 25px;
+    }
+
+    .price {
+        padding-top: 70px;
+    }
+
+    .price__wrap {
+        margin-top: 25px;
+        margin-bottom: 35px;
+    }
+
+    .price__wrap__list {
+        row-gap: 20px;
+    }
+
+    .price__wrap__list__item__control__title {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    .price__wrap__list__item__control {
+        padding: 18px 10px 18px 15px;
+    }
+
+    .price__wrap__list__item__control__icon {
+        width: 16px;
+        height: 9px;
+    }
+
+    .price__wrap__list__item__content__list__item {
+        padding: 18px 10px 18px 15px;
+        font-size: 16px;
+    }
+
+    .price__wrap__list__item__content__list__item__text {
+        font-size: 16px;
+        width: 240px;
+    }
+
+    .price__wrap__list__item__content__list__item__price {
+        font-size: 16px;
+    }
+
+    .price__btn {
+        width: 290px;
+        text-align: center;
+        padding: 16px;
+    }
+
+    .discount {
+        padding-top: 90px;
+    }
+
+    .discount__wrap__title {
+        font-size: 26px;
+    }
+
+    .discount__wrap {
+        padding-top: 45px;
+    }
+
+    .discount__wrap__content__swiper {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .discount__wrap__content__swiper__inner__slide {
+        width: 100% !important;
+    }
+
+    .discount__wrap__content__swiper__inner__slide__contain__info__text {
+        font-size: 18px;
+    }
+
+    .discount__wrap__content__swiper__inner__slide__contain__info__btn {
+        padding: 16px 30px;
+        text-align: center;
+    }
+
+    .discount__wrap__content__swiper__inner__slide__contain__info__photo {
+        width: 260px;
+        height: 190px;
+    }
+
+    .gallery {
+        padding-top: 80px;
+    }
+
+    .gallery__wrap__swiper {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+
+    .gallery__wrap__swiper__inner__slide {
+        padding: 0 0 35px 0;
+    }
+
+    .gallery__wrap__swiper__inner__slide__before-after__after__photo {
+        height: 220px;
+    }
+
+    .gallery__wrap__swiper__inner__slide__before-after {
+        height: 220px;
+    }
+
+    .gallery__wrap__swiper__inner__slide__before-after__before {
+        height: 220px;
+    }
+
+    .gallery__wrap__swiper__inner__slide__before-after__before__photo {
+        height: 220px;
+    }
+
+    .gallery__wrap__swiper__inner__slide__content {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .gallery__wrap__swiper__inner__slide__content__title {
+        font-size: 20px;
+    }
+
+    .gallery__wrap__swiper__inner__slide__content__description {
+        font-size: 16px;
+    }
+
+    .gallery__wrap__swiper__inner__slide__content__doctor__text {
+        font-size: 16px;
+    }
+
+    .gallery__wrap__swiper__inner__slide__content__doctor__name {
+        font-size: 16px;
+    }
+
+    .gallery__wrap__swiper__inner__slide__before-after__before__text {
+        font-size: 16px;
+    }
+
+    .gallery__wrap__swiper__inner__slide__before-after__after__text {
+        font-size: 16px;
+    }
+
+    .gallery {
+        padding-bottom: 70px;
+    }
+
+    .reviews {
+        padding-bottom: 50px;
+    }
+
+    .reviews__swiper {
+        width: 100%;
+    }
+
+    .reviews__swiper__inner__slide__header__photo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .reviews__swiper__inner__slide__header__name {
+        font-size: 18px;
+    }
+
+    .reviews__swiper {
+        margin-top: 25px;
+    }
+
+    .reviews .swiper-pagination5 {
+        display: block;
+    }
+
+    .reviews__yandex {
+        padding: 25px 15px 40px 15px;
+    }
+
+    .reviews__yandex__header__logo {
+        width: 160px;
+        height: 27px;
+    }
+
+    .reviews__yandex__header {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .reviews__yandex__header__info__rating {
+        margin-top: 15px;
+    }
+
+    .reviews__yandex__header__info__rating__grade {
+        font-size: 40px;
+    }
+
+    .reviews__yandex__btn {
+        padding: 16px 26px 16px 26px;
+    }
+
+    .faq {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .faq__header__subtitle {
+        font-size: 11px;
+        padding: 11px 15px 10px 15px;
+    }
+
+    .faq__wrap {
+        margin-top: 25px;
+    }
+
+    .faq__wrap__list__item__control__title {
+        font-size: 18px;
+        width: 275px;
+    }
+
+    .faq__wrap__list__item__control {
+        padding: 15px 10px 15px 15px;
+    }
+
+    .faq__wrap__list__item__control__icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .faq__wrap__list__item__control__icon__image {
+        width: 18px;
+        height: 18px;
+    }
+
+    .faq__wrap__list__item__content__text {
+        font-size: 16px;
+        padding: 20px 15px 20px 15px;
+    }
+
+    .faq__wrap__list__item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .faq__wrap__call {
+        padding: 40px 20px 40px 20px;
+    }
+
+    .faq__wrap__call__icon {
+        width: 75px;
+        height: 75px;
+    }
+
+    .faq__wrap__call__title {
+        font-size: 20px;
+    }
+
+    .faq__wrap__call__text {
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    .faq__wrap__call__undertext {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    
+    .contacts__title {
+        font-size: 26px;
+    }
+
+    .contacts__wrap-mob__list__item__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contacts__wrap-mob__list__item__link {
+        font-size: 20px;
+    }
+
+    .contacts__wrap-mob__list .contacts__wrap-mob__calendar__header__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contacts__wrap-mob__list .contacts__wrap-mob__calendar__header__title {
+        font-size: 20px;
+    }
+
+    .contacts__wrap-mob__list .contacts__wrap-mob__calendar__time__weekdays {
+        font-size: 18px;
+    }
+
+    .contacts__wrap-mob__list .contacts__wrap-mob__map__header__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contacts__wrap-mob__list .contacts__wrap-mob__map__header__title {
+        font-size: 20px;
+    }
+
+    .contacts__wrap-mob__list .contacts__wrap-mob__map__address {
+        font-size: 18px;
+    }
+
+    .contacts__wrap-mob__list .contacts__wrap-mob__calendar__time__daysoff {
+        font-size: 18px;
+    }
+
+    .contacts iframe {
+        height: 375px;
+    }
+
+    .footer__wrap__contacts__phone {
+        font-size: 19px;
+    }
+
+    .footer__wrap__contacts__whatsapp__number {
+        font-size: 19px;
+    }
+
+    .footer__wrap__info__item-address {
+        font-size: 19px;
+    }
+
+    .intro__wrap {
+        padding-top: 45px;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 50px;
+    }
+
+    .intro__wrap__content__title {
+        font-size: 28px;
+    }
+
+    .intro__wrap__content__header__title {
+        font-size: 11px;
+        padding: 11px 15px 10px 15px;
+    }
+
+    .intro__wrap__content__header__icon {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .intro__wrap__content__description {
+        font-size: 16px;
+    }
+
+    .intro__wrap__content__btn {
+        width: 290px;
+        text-align: center;
+        padding: 16px;
+    }
+
+    .cards__wrap__item {
+        padding: 30px 15px 35px 15px;
+    }
+
+    .cards__wrap__item__text {
+        margin-top: 15px;
+    }
+    
+    .cards__callback {
+        padding-top: 35px;
+    }
+
+    .cards__callback__link {
+        width: 290px;
+        text-align: center;
+        padding: 16px;
+    }
+
+    .cards__title {
+        margin-bottom: 15px;
+    }
+
+    .cards__wrap__item__warning__text {
+        font-size: 17px;
+    }
+
+    .cards__wrap__item__warning__icon {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cards__wrap__full-two__stars__header__icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .cards__wrap__full-two__stars__header__title {
+        font-size: 16px;
+    }
+
+    .cards__wrap__full-two {
+        padding: 30px 15px 30px 15px;
+    }
+
+    .cards__wrap__full-two__stars__content__item__text {
+        font-size: 16px;
+    }
+
+    .cards__wrap__full-two__stars__content__item {
+        padding: 17px 15px;
+    }
+
+    .cards__wrap__full-two__stars__content__item__icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .cards__wrap__full {
+        padding: 30px 15px 30px 15px;
+    }
+}

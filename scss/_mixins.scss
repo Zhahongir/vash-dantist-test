@@ -1,0 +1,27 @@
+@mixin dark {
+    color: #45494E;
+}
+
+@mixin dark-bg {
+    background-color: #45494E;
+}
+
+@mixin green-main {
+    color: #409300;
+}
+
+@mixin green-main-bg {
+    background-color: #409300;
+}
+
+@mixin text {
+    color: #4F4F4F;
+}
+
+@mixin title {
+    .title {
+        font-size: 36px;
+        font-weight: 500;
+        @include dark;
+    }
+}

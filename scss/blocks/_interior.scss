@@ -1,0 +1,105 @@
+.interior {
+    padding-top: 100px;
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @include title;
+        &__btns {
+            display: flex;
+            align-items: center;
+            &__el {
+                margin-left: 20px;
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                border: 1px solid rgba(28, 28, 28, 0.2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: 0.3s ease;
+                &:hover {
+                    @include green-main-bg;
+                }
+                &:hover .interior__header__btns__el__icon {
+                    fill: #fff;
+                }
+                &__icon {
+                    fill: #45494E;
+                    width: 20px;
+                    height: 15px;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+    &__content {
+        margin-top: 25px;
+        padding-left: calc((100% - 1200px) / 2);
+        &__wrap {
+            position: relative;
+            &__inner {
+                &__slider {
+                    position: relative;
+                    width: auto !important;
+                    &__photo {
+                        width: auto;
+                        &__main {
+                            width: auto;
+                            height: 300px;
+                            object-fit: cover;
+                            border-radius: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__progress {
+        position: relative;
+        display: flex;
+        margin-top: 25px;
+        align-items: center;
+        justify-content: space-between;
+        &__pagination {
+            display: block !important;
+            position: relative !important;
+            background-color: #E0E0E0 !important;
+            border-radius: 100px !important;
+            .swiper-pagination-progressbar-fill {
+                background-color: #45494E !important;
+                border-radius: 100px !important;
+            }
+        }
+        &__btns {
+            display: flex;
+            align-items: center;
+            display: none;
+            &__el {
+                margin-left: 20px;
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                border: 1px solid rgba(28, 28, 28, 0.2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: 0.3s ease;
+                &:hover {
+                    @include green-main-bg;
+                }
+                &:hover .interior__progress__btns__el__icon {
+                    fill: #fff;
+                }
+                &__icon {
+                    fill: #45494E;
+                    width: 20px;
+                    height: 15px;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+}

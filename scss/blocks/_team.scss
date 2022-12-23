@@ -1,0 +1,427 @@
+.team {
+    position: relative;
+    padding-top: 100px;
+    &__header {
+        position: relative;
+        &__subtitle {
+            display: flex;
+            align-items: center;
+            &__circle {
+                width: 6px;
+                height: 6px;
+                background-color: #27AE60;
+                border-radius: 100%;
+                margin-right: 10px;
+            }
+            &__title {
+                font-size: 22px;
+                font-weight: 500;
+                color: #828282;
+            }
+        }
+        &__wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 6px;
+            @include title;
+            &__btns {
+                display: flex;
+                align-items: center;
+                display: none;
+                &__el {
+                    margin-left: 20px;
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    border: 1px solid rgba(28, 28, 28, 0.2);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    cursor: pointer;
+                    transition: 0.3s ease;
+                    &:hover {
+                        @include green-main-bg;
+                    }
+                    &:hover .team__header__wrap__btns__el__icon {
+                        fill: #fff;
+                    }
+                    &__icon {
+                        fill: #45494E;
+                        width: 20px;
+                        height: 15px;
+                        transition: 0.3s ease;
+                    }
+                }
+            }
+        }
+    }
+    &__wrap {
+        margin-top: 35px;
+        &__content__item {
+            width: 100%;
+            display: flex;
+            background-color: #F9F9F9;
+            border-radius: 10px;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            outline: 2px solid #27AE60;
+            height: 468px;
+            padding: 0;
+            &__photo {
+                width: 313px;
+                height: 470px;
+                object-fit: cover;
+            }
+            &__info {
+                margin-top: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                padding-right: 50px;
+                padding-left: 50px;
+                &__name {
+                    font-size: 30px;
+                    font-weight: 500;
+                    @include dark;
+                }
+                &__list {
+                    margin-top: 20px;
+                    &__item {
+                        font-size: 18px;
+                        font-weight: 400;
+                        @include text;
+                        &:not(:last-child) {
+                            margin-bottom: 15px;
+                        }
+                        span {
+                            font-weight: 600;
+                        }
+                    }
+                    .team__info__list__item-education {
+                        &__span {
+                            font-size: 18px;
+                            font-weight: 600;
+                            @include text;
+                            margin-bottom: 5px;
+                        }
+                        &__text {
+                            font-size: 18px;
+                            font-weight: 400;
+                            @include text;
+                        }
+                    }
+                }
+            }
+        }
+        &__swiper {
+            width: 1200px;
+            overflow: hidden;
+            margin-top: 30px;
+            padding-left: 2px;
+            padding-right: 8px;
+            &__inner {
+                &__slider {
+                    width: 220px;
+                    padding-top: 5px;
+                    &__photo {
+                        width: 224px;
+                        display: block !important;
+                        height: 318px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        outline: 2px solid #fff;
+                        cursor: pointer;
+                        padding: 0 !important;
+                        transition: 0.2s ease;
+                    }
+                    .tabheader__item_active {
+                        outline: 2px solid #27AE60;
+                        border-radius: 10px;
+                    }
+                    &__info {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: baseline;
+                        margin-top: 10px;
+                        width: 224px;
+                        &__name {
+                            font-size: 20px;
+                            font-weight: 500;
+                            @include dark;
+                        }
+                        &__job {
+                            margin-top: 5px;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #C0C0C0;
+                        }
+                        &__btn {
+                            width: 100%;
+                            margin-top: 15px;
+                            border: 1px solid rgba(28, 28, 28, 0.2);
+                            border-radius: 10px;
+                            text-align: center;
+                            padding: 11px 0 12px 0;
+                            font-size: 16px;
+                            font-weight: 500;
+                            @include green-main;
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__progress {
+        position: relative;
+        display: flex;
+        margin-top: 30px;
+        align-items: center;
+        justify-content: space-between;
+        &__pagination {
+            display: block !important;
+            position: relative !important;
+            background-color: #E0E0E0 !important;
+            border-radius: 100px !important;
+            .swiper-pagination-progressbar-fill {
+                background-color: #45494E !important;
+                border-radius: 100px !important;
+            }
+        }
+        &__btns {
+            display: flex;
+            align-items: center;
+            margin-left: 30px;
+            &__el {
+                margin-left: 20px;
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                border: 1px solid rgba(28, 28, 28, 0.2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: 0.3s ease;
+                &:hover {
+                    @include green-main-bg;
+                }
+                &:hover .team__progress__btns__el__icon {
+                    fill: #fff;
+                }
+                &__icon {
+                    fill: #45494E;
+                    width: 20px;
+                    height: 15px;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+    .team-mob {
+        padding-left: calc((100% - 720px) / 2);
+        margin-top: 30px;
+        display: none;
+        .team__swiper-mob {
+            position: relative;
+            padding-left: 0px;
+            padding-right: 0px;
+            &__inner {
+                &__slider {
+                    width: 220px;
+                    padding-top: 5px;
+                    &__photo {
+                        width: 224px;
+                        display: block !important;
+                        height: 318px;
+                        object-fit: cover;
+                        border-radius: 10px;
+                        outline: 2px solid #fff;
+                        cursor: pointer;
+                        padding: 0 !important;
+                        transition: 0.2s ease;
+                    }
+                    .tabheader__item_active {
+                        outline: 2px solid #27AE60;
+                        border-radius: 10px;
+                    }
+                    &__info {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: baseline;
+                        margin-top: 10px;
+                        width: 224px;
+                        &__name {
+                            font-size: 20px;
+                            font-weight: 500;
+                            @include dark;
+                        }
+                        &__job {
+                            margin-top: 5px;
+                            font-size: 16px;
+                            font-weight: 500;
+                            color: #C0C0C0;
+                        }
+                        &__btn {
+                            width: 100%;
+                            margin-top: 15px;
+                            border: 1px solid rgba(28, 28, 28, 0.2);
+                            border-radius: 10px;
+                            text-align: center;
+                            padding: 11px 0 12px 0;
+                            font-size: 16px;
+                            font-weight: 500;
+                            @include green-main;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from{opacity: 0.1;}
+    to{opacity: 1;}
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+// Personal Modal
+.personal {
+    position: fixed;
+    overflow: scroll;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    &__wrap {
+        position: relative;
+        padding: 20px 20px 35px 20px;
+        &__close {
+            text-align: right;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            margin-left: auto;
+        }
+        &__content {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            &__photo {
+                width: 45%;
+                height: auto;
+                border-radius: 10px;
+                object-fit: cover;
+            }
+            &__info {
+                width: 50%;
+                &__name {
+                    font-size: 26px;
+                    font-weight: 500;
+                    @include green-main;
+                }
+                &__biography {
+                    position: relative;
+                    &__item {
+                        margin-top: 20px;
+                        font-size: 16px;
+                        font-weight: 500;
+                        @include text;
+                        span {
+                            font-weight: 600;
+                            @include dark;
+                        }
+                    }
+                    &__education {
+                        display: flex;
+                        flex-direction: column;
+                        margin-top: 20px;
+                        &__title {
+                            font-size: 16px;
+                            font-weight: 600;
+                            @include dark;
+                        }
+                        &__text {
+                            font-size: 16px;
+                            font-weight: 500;
+                            @include text;
+                            margin-top: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#first-doctor {
+    display: none;
+}
+
+#second-doctor {
+    display: none;
+}
+
+#third-doctor {
+    display: none;
+}
+
+#four-doctor {
+    display: none;
+}
+
+#five-doctor {
+    display: none;
+}
+
+#six-doctor {
+    display: none;
+}
+
+#seven-doctor {
+    display: none;
+}
+
+#eight-doctor {
+    display: none;
+}
+
+#nine-doctor {
+    display: none;
+}
+
+#ten-doctor {
+    display: none;
+}
+
+#eleven-doctor {
+    display: none;
+}
+
+#twelve-doctor {
+    display: none;
+}
+
+#thirteen-doctor {
+    display: none;
+}
+

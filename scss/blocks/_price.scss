@@ -1,0 +1,120 @@
+.price {
+    position: relative;
+    padding-top: 100px;
+    @include title;
+    &__wrap {
+        position: relative;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        &__list {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 25px;
+            align-items: baseline;
+            &__item {
+                width: 100%;
+                &__control {
+                    width: 100%;
+                    background-color: #F9F9F9;
+                    border-radius: 10px 10px 10px 10px;
+                    cursor: pointer;
+                    padding: 20px 25px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    border: 1px solid rgba(28, 28, 28, 0.1);
+                    transition: all 0.3s ease-out;
+                    &__title {
+                        font-size: 24px;
+                        font-weight: 500;
+                        @include dark;
+                    }
+                    &__icon {
+                        width: 20px;
+                        height: 11px;
+                        transition: 0.8s ease;
+                        margin-top: 4px;
+                    }
+                }
+                &__content {
+                    width: 100%;
+                    background-color: #fff;
+                    opacity: 0;
+                    max-height: 0;
+                    overflow: hidden;
+                    will-change: max-height;
+                    transition: all 0.3s ease-in;
+                    box-sizing: content-box;
+                    border-radius: 0 0 10px 10px;
+                    &__list {
+                        border: 1px solid rgba(28, 28, 28, 0.1);
+                        border-radius: 0 0 10px 10px;
+                        &__item {
+                            padding: 20px 25px;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            font-size: 20px;
+                            font-weight: 600;
+                            @include green-main;
+                            &:not(:last-child) {
+                                border-bottom: 1px solid rgba(28, 28, 28, 0.1);
+                            }
+                            &__text {
+                                font-size: 18px;
+                                font-weight: 500;
+                                @include text;
+                                width: 1000px;
+                            }
+                            &__price {
+                                font-size: 18px;
+                                font-weight: 500;
+                                @include green-main;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__btn {
+        font-size: 16px;
+        font-weight: 500;
+        color: #fff;
+        text-transform: uppercase;
+        @include green-main-bg ;
+        border-radius: 10px;
+        text-align: center;
+        padding: 18px 30px;
+        width: max-content;
+        margin-top: 50px;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid ;
+        transition: 0.5s ease;
+        border: 1px solid #409300;
+        &:hover {
+            background-color: #fff;
+            @include green-main;
+        }
+    }
+}
+
+
+.open .price__wrap__list__item__control {
+    border-radius: 10px 10px 0 0;
+}
+
+.open .price__wrap__list__item__content {
+    opacity: 1;
+    display: block;
+    overflow: hidden;
+    max-height: 100%;
+    transition: all 0.3s ease-out;
+}
+
+.open .price__wrap__list__item__control__icon {
+    transform: rotate(180deg);
+}

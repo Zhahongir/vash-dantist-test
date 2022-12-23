@@ -1,0 +1,177 @@
+.faq {
+    padding-top: 75px;
+    position: relative;
+    padding-bottom: 80px;  
+    &__header {
+        display: flex;
+        align-items: center;
+        @include title;
+        &__subtitle {
+            font-size: 12px;
+            font-weight: 500;
+            text-transform: uppercase;
+            @include dark;
+            padding: 11px 20px 10px 20px;
+            border: 1px solid rgba(28, 28, 28, 0.2);
+            border-radius: 10px;
+            margin-left: 18px;
+        }
+    }
+    &__wrap {
+        margin-top: 35px;
+        display: flex;
+        justify-content: space-between;
+        &__list {
+            position: relative;
+            &__item {
+                width: 570px;
+                &:not(:last-child) {
+                    margin-bottom: 25px;
+                }
+                &__control {
+                    width: 100%;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px 15px 15px 25px;
+                    border: 2px solid rgba(28, 28, 28, 0.1);
+                    background-color: #fff;
+                    cursor: pointer;
+                    transition: 0.3s ease;
+                    &:hover {
+                        border: 2px solid #9CC57C;
+                    }
+                    &__title {
+                        font-size: 20px;
+                        font-weight: 500;
+                        @include dark;
+                        transition: 0.5s ease;
+                        width: 460px;
+                        text-align: left;
+                    }
+                    &__icon {
+                        width: 38px;
+                        height: 38px;
+                        background-color: #9CC57C;
+                        border-radius: 100%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        &__image {
+                            width: 20px;
+                            height: 20px;
+                            transition: 0.5s ease;
+                        }
+                    }
+                }
+                &__content {
+                    position: relative;
+                    text-align: left;
+                    border-radius: 0 0 10px 10px;
+                    border-right: 2px solid #9CC57C;
+                    border-bottom: 2px solid #9CC57C;
+                    border-left: 2px solid #9CC57C;
+                    opacity: 0;
+                    max-height: 0;
+                    overflow: hidden;
+                    will-change: max-height;
+                    transition: all 0.3s ease-in;
+                    box-sizing: content-box;
+                    &__text {
+                        font-size: 18px;
+                        font-weight: 500;
+                        @include text;
+                        padding: 20px 25px 30px 25px;
+                    }
+                }
+            }
+        }
+        &__call {
+            position: sticky;
+            top: 0;
+            border: 2px solid rgba(28, 28, 28, 0.1);
+            border-radius: 10px;
+            width: 570px;
+            height: max-content;
+            padding: 55px 50px 50px 50px;
+            text-align: center;
+            &__icon {
+                width: 109px;
+                height: 109px;
+                margin-bottom: 15px;
+            }
+            &__title {
+                font-size: 28px;
+                font-weight: 500;
+                @include dark;
+                text-align: center;
+                margin-bottom: 4px;
+            }
+            &__text {
+                font-size: 18px;
+                font-weight: 400;
+                color: #828282;
+                margin-top: 15px;
+            }
+            &__undertext {
+                font-size: 18px;
+                font-weight: 400;
+                color: #828282;
+                margin-top: 8px;
+                margin-bottom: 20px;
+            }
+            &__whatsapp {
+                padding: 12px 18px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                width: max-content;
+                background-color: #48C95F;
+                transition: 0.4s ease;
+                &:hover {
+                    opacity: 0.9;
+                }
+                &__contain {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &__title {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #fff;
+                    }
+                    &__icon {
+                        width: 21px;
+                        height: 21px;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.open .faq__wrap__list__item__control {
+    border-radius: 10px 10px 0 0;
+    border: 2px solid #9CC57C;
+    border-bottom: 2px solid rgba(28, 28, 28, 0.1);
+}
+
+.open .faq__wrap__list__item__control__title {
+    @include green-main;
+}
+
+.open .faq__wrap__list__item__content {
+    opacity: 1;
+    display: block;
+    overflow: hidden;
+    max-height: 100%;
+    transition: all 0.7s ease-out;
+}
+
+.open .faq__wrap__list__item__control__icon__image {
+    transform: rotate(-45deg);
+}

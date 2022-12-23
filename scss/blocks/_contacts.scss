@@ -1,0 +1,256 @@
+.contacts {
+    width: 100%;
+    background: radial-gradient(40.75% 40.75% at 68.75% 59.25%, rgba(86, 190, 5, 0.9) 0%, rgba(64, 147, 0, 0.9) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    border-radius: 10px 10px 0px 0px;
+    padding-top: 40px;
+    &__title {
+        font-size: 36px;
+        font-weight: 500;
+        color: #fff;
+    }
+    &__wrap {
+        margin-top: 45px;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 55px;
+        &__left {
+            position: relative;
+            &__phone {
+                display: flex;
+                align-items: center;
+                &:not(:last-child) {
+                    margin-bottom: 35px;
+                }
+                &__icon {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                }
+                &__number {
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #fff;
+                    transition: 0.5s ease;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+        &__middle {
+            position: relative;
+            &__vk {
+                display: flex;
+                align-items: center;
+                margin-bottom: 35px;
+                &__icon {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                }
+                &__link {
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #fff;
+                    transition: 0.5s ease;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+            &__map {
+                position: relative;
+                &__header {
+                    display: flex;
+                    align-items: center;
+                    &__icon {
+                        width: 50px;
+                        height: 50px;
+                        margin-right: 10px;
+                    }
+                    &__title {
+                        font-size: 24px;
+                        font-weight: 500;
+                        color: #fff;
+                    }
+                }
+                &__address {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #fff;
+                    margin-top: 20px;
+                    span {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+        &__right {
+            position: relative;
+            &__email {
+                display: flex;
+                align-items: center;
+                margin-bottom: 35px;
+                &__icon {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 10px;
+                }
+                &__link {
+                    font-size: 24px;
+                    font-weight: 500;
+                    color: #fff;
+                    transition: 0.5s ease;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+            &__calendar {
+                position: relative;
+                &__header {
+                    display: flex;
+                    align-items: center;
+                    &__icon {
+                        width: 50px;
+                        height: 50px;
+                        margin-right: 10px;
+                    }
+                    &__title {
+                        font-size: 24px;
+                        font-weight: 500;
+                        color: #fff;
+                    }
+                }
+                &__time {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 20px;
+                    &__weekdays {
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: #fff;
+                        margin-right: 45px;
+                        span {
+                            font-weight: 400;
+                        }
+                    }
+                    &__dayoff {
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: #fff;
+                        span {
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__wrap-mob {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        display: none;
+        &__list {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            &__item {
+                display: flex;
+                align-items: center;
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+                &__icon {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 10px;
+                }
+                &__link {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #fff;
+                    transition: 0.3s ease;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+            .contacts__wrap-mob__calendar {
+                position: relative;
+                margin-bottom: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                &__header {
+                    display: flex;
+                    align-items: center;
+                    &__icon {
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 10px;
+                    }
+                    &__title {
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: #fff;
+                    }
+                }
+                &__time {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 15px;
+                    &__weekdays {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #fff;
+                        margin-right: 40px;
+                        span {
+                            font-weight: 400;
+                        }
+                    }
+                    &__daysoff {
+                        font-size: 18px;
+                        font-weight: 500;
+                        color: #fff;
+                        span {
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            .contacts__wrap-mob__map {
+                position: relative;
+                margin-bottom: 40px;
+                display: flex;
+                flex-direction: column;
+                align-items: baseline;
+                &__header {
+                    display: flex;
+                    align-items: center;
+                    &__icon {
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 10px;
+                    }
+                    &__title {
+                        font-size: 20px;
+                        font-weight: 500;
+                        color: #fff;
+                    }
+                }
+                &__address {
+                    position: relative;
+                    margin-top: 15px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #fff;
+                    span {
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,294 @@
+.cards {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 90px;
+    &__title {
+        font-size: 36px;
+        font-weight: 600;
+        @include green-main;
+        margin-bottom: 30px;
+    }
+    .cards-title-indside {
+        margin-top: 50px;
+    }
+    &__wrap {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        column-gap: 40px;
+        row-gap: 35px;
+        &__item {
+            width: 580px;
+            border-radius: 20px;
+            padding: 40px 25px 50px 25px;
+            background-color: #fff;
+            border: 2px solid #E0E0E0;
+            &__warning {
+                display: flex;
+                align-items: center;
+                &__icon {
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 10px;
+                }
+                &__text {
+                    font-size: 20px;
+                    font-weight: 500;
+                    color: #EB5757;
+                }
+            }
+            &__number {
+                font-size: 24px;
+                font-weight: 600;
+                @include green-main;
+            }
+            &__text {
+                margin-top: 20px;
+                font-size: 18px;
+                font-weight: 500;
+                @include text;
+                span {
+                    font-weight: 500;
+                    @include green-main;
+                }
+            }
+            &__list {
+                margin-top: 20px;
+                position: relative;
+                &__item {
+                    font-size: 18px;
+                    font-weight: 500;
+                    @include text;
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            &__list-two {
+                margin-top: 20px;
+                position: relative;
+                &__item {
+                    font-size: 16px;
+                    font-weight: 500;
+                    @include text;
+                    &:not(:last-child) {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+            &__text-mt-none {
+                margin-top: 0;
+                font-size: 18px;
+                font-weight: 500;
+                @include text;
+            }
+        }
+        .cards__wrap__full-mt {
+            margin-top: 30px;
+        }
+        &__full-two {
+            width: 100%;
+            background-color: #fff;
+            border: 2px solid #E0E0E0;
+            border-radius: 20px;
+            position: relative;
+            padding: 35px 25px 60px 25px;
+            &__stars {
+                text-align: center;
+                position: relative;
+                &__header {
+                    display: block;
+                    text-align: center;
+                    align-items: center;
+                    margin: 0 auto;
+                    width: 562px;
+                    &__icon {
+                        width: 45px;
+                        height: 45px;
+                    }
+                    &__title {
+                        font-size: 20px;
+                        font-weight: 500;
+                        @include text;
+                        margin-top: 10px;
+                    }
+                }
+                &__content {
+                    margin: 0 auto;
+                    margin-top: 30px;
+                    position: relative;
+                    width: 900px;
+                    display: flex;
+                    justify-content: center;
+                    column-gap: 50px;
+                    row-gap: 30px;
+                    flex-wrap: wrap;
+                    &__item {
+                        display: flex;
+                        align-items: center;
+                        padding: 16px 22px;
+                        background-color: #F9F9F9;
+                        border: 1px solid #409300;
+                        border-radius: 10px;
+                        &__icon {
+                            width: 23px;
+                            height: 23px;
+                            margin-right: 10px;
+                        }
+                        &__text {
+                            font-size: 18px;
+                            font-weight: 500;
+                            @include dark;
+                        }
+                    }
+                }
+            }
+        }
+        &__full {
+            width: 100%;
+            background-color: #fff;
+            border: 2px solid #E0E0E0;
+            border-radius: 20px;
+            position: relative;
+            padding: 35px 25px 60px 25px;
+            display: flex;
+            column-gap: 90px;
+            &__left {
+                position: relative;
+                &__text {
+                    font-size: 18px;
+                    font-weight: 500;
+                    width: 530px;
+                    @include text;
+                    span {
+                        font-weight: 600;
+                        @include green-main;
+                    }
+                }
+                &__list-title {
+                    margin-top: 20px;
+                    width: 530px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    @include green-main;
+                }
+                &__list {
+                    margin-top: 15px;
+                    position: relative;
+                    width: 530px;
+                    &__item {
+                        font-size: 18px;
+                        font-weight: 500;
+                        @include text;
+                        &:not(:last-child) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                &__danger {
+                    width: 530px;
+                    font-size: 18px;
+                    font-weight: 500;
+                    color: #EB5757;
+                    margin-top: 20px;
+                }
+            }
+            &__right {
+                position: relative;
+                &__list-title {
+                    font-size: 18px;
+                    font-weight: 500;
+                    @include text;
+                    span {
+                        font-weight: 600;
+                        @include green-main;
+                    }
+                }
+                &__list {
+                    margin-top: 18px;
+                    width: 100%;
+                    &__item {
+                        font-size: 16px;
+                        font-weight: 500;
+                        @include text;
+                        &:not(:last-child) {
+                            margin-bottom: 20px;
+                        }
+                        span {
+                            @include green-main;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                &__list-two {
+                    margin-top: 10px;
+                    position: relative;
+                    width: 530px;
+                    &__item {
+                        font-size: 18px;
+                        font-weight: 500;
+                        @include text;
+                        &:not(:last-child) {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+                &__danger {
+                    width: 530px;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: #EB5757;
+                    margin-top: 20px;
+                }
+                &__list-text {
+                    font-size: 18px;
+                    font-weight: 500;
+                    @include text;
+                    margin-top: 20px;
+                    span {
+                        @include green-main;
+                        font-weight: 600;
+                    }
+                    .red {
+                        font-weight: 600;
+                        color: #EB5757;
+                    }
+                }
+            }
+            &__divider {
+                position: absolute;
+                top: -1px;
+                left: 50%;
+                width: 2px;
+                height: 101%;
+                background-color: #E0E0E0;
+            }
+        }
+    }
+    &__callback {
+        padding-top: 50px;
+        margin: 0 auto;
+        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &__link {
+            font-size: 16px;
+            font-weight: 500;
+            color: #fff;
+            text-align: center;
+            padding: 18px 30px;
+            border-radius: 10px;
+            text-transform: uppercase;
+            @include green-main-bg;
+            border: 1px solid #409300;
+            transition: 0.5s ease;
+            &:hover {
+                background-color: transparent;
+                @include green-main;
+            }
+        }
+    }
+}

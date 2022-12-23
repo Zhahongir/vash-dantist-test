@@ -1,0 +1,103 @@
+.intro {
+    padding-top: 95px;
+    position: relative;
+    &__wrap {
+        background-color: #fff;
+        border: 2px solid #E0E0E0;
+        border-radius: 20px;
+        padding-left: 55px;
+        padding-top: 90px;
+        height: 522px;
+        display: flex;
+        &__content {
+            position: relative;
+            width: 550px;
+            margin-right: 190px;
+            &__header {
+                display: flex;
+                align-items: center;
+                &__icon {
+                    width: 60px;
+                    height: 60px;
+                    margin-right: 20px;
+                }
+                &__title {
+                    font-size: 12px;
+                    font-weight: 500;
+                    @include dark;
+                    padding: 11px 30px 10px 30px;
+                    border-radius: 10px;
+                    border: 1px solid rgba(28, 28, 28, 0.5);
+                    text-transform: uppercase;
+                }
+            }
+            &__title {
+                font-size: 55px;
+                font-weight: 600;
+                @include green-main;
+                margin-top: 35px;
+            }
+            &__description {
+                margin-top: 15px;
+                font-size: 20px;
+                font-weight: 500;
+                @include text;
+            }
+            &__btn {
+                display: none;
+                font-size: 16px;
+                font-weight: 500;
+                color: #fff;
+                border-radius: 10px;
+                @include green-main-bg;
+                padding: 15px 53px;
+                text-transform: uppercase;
+                border: 1px solid #409300;
+                transition: 0.5s ease;
+                &:hover {
+                    background-color: #fff;
+                    @include green-main;
+                }
+            }
+        }
+        &__btn {
+            margin-top: 55px;
+            &__link {
+                font-size: 20px;
+                position: relative;
+                font-weight: 500;
+                color: #fff;
+                text-align: center;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: center;
+                padding-top: 91px;
+                width: 220px;
+                height: 220px;
+                border-radius: 100%;
+                transition: 0.5s ease;
+                @include green-main-bg;
+                &:hover::before {
+                    width: 220px;
+                    height: 220px;
+                    left: 0;
+                    top: 0;
+                }
+                &:hover {
+                    opacity: 0.9;
+                }
+                &::before {
+                    content: '';
+                    width: 240px;
+                    height: 240px;
+                    border: 1px solid #409300;
+                    position: absolute;
+                    left: -10px;
+                    top: -10px;
+                    border-radius: 100%;
+                    transition: 0.5s ease;
+                }
+            }
+        }
+    }
+}

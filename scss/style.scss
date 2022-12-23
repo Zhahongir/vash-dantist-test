@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 400;
+}
+
+html { 
+    overflow-x: hidden; 
+}​
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FFF;
+    overflow-x: hidden;
+}
+
+#service-bg {
+    background-color: #F9F9F9;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+div, a, button, span, p {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); 
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+// Block
+@import '../scss/fonts';
+@import '../scss/mixins';
+
+@import '../scss/blocks/header';
+@import '../scss/blocks/promo';
+@import '../scss/blocks/about';
+@import '../scss/blocks/interior';
+@import '../scss/blocks/team';
+@import '../scss/blocks/services';
+@import '../scss/blocks/price';
+@import '../scss/blocks/discount';
+@import '../scss/blocks/gallery';
+@import '../scss/blocks/reviews';
+@import '../scss/blocks/faq';
+@import '../scss/blocks/contacts';
+@import '../scss/blocks/footer';
+
+@import '../scss/blocks/intro';
+@import '../scss/blocks/cards';
+
+// Responsive
+@import '../scss/responsive/1199px';
+@import '../scss/responsive/991px';
+@import '../scss/responsive/767px';
+@import '../scss/responsive/575px';
+@import '../scss/responsive/401px';

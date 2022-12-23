@@ -1,0 +1,190 @@
+.discount {
+    position: relative;
+    padding-top: 100px;
+    &__wrap {
+        position: relative;
+        background-color: #219653;
+        width: 100%;
+        border-radius: 10px;
+        padding-top: 50px;
+        padding-bottom: 70px;
+        overflow: hidden;
+        &__title {
+            text-align: center;
+            font-size: 36px;
+            color: #fff;
+            font-weight: 500;
+        }
+        &__content {
+            position: relative;
+            margin-top: 30px;
+            &__swiper {
+                position: relative;
+                width: 750px;
+                overflow: hidden;
+                margin: 0 auto;
+                &__inner {
+                    &__slide {
+                        width: 750px !important;
+                        position: relative;
+                        &__contain {
+                            position: relative;
+                            background-color: #fff;
+                            border-radius: 10px;
+                            width: 100%;
+                            padding: 25px 0 25px 30px;
+                            &__info {
+                                &__logo {
+                                    width: 160px;
+                                    height: 52px;
+                                    margin-bottom: 35px;
+                                }
+                                &__text {
+                                    margin-bottom: 8px;
+                                    font-size: 26px;
+                                    @include dark;
+                                    font-weight: 700;
+                                    font-family: 'SF';
+                                    text-transform: uppercase;
+                                    span {
+                                        @include green-main;
+                                        font-weight: 700;
+                                        font-family: 'SF';
+                                    }
+                                }
+                                .discount__info__text__iskl {
+                                    margin-bottom: 45px;
+                                }
+                                &__star {
+                                    background: url(../icons/star-discount.svg);
+                                    background-position: center;
+                                    background-size: cover;
+                                    background-repeat: no-repeat;
+                                    width: 136px;
+                                    height: 136px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    flex-direction: column;
+                                    text-align: center;
+                                    position: absolute;
+                                    top: 13px;
+                                    right: 179px;
+                                    z-index: 5;
+                                    &__number {
+                                        font-size: 48px;
+                                        font-weight: 700;
+                                        color: #fff;
+                                    }
+                                    &__text {
+                                        font-size: 14px;
+                                        color: #fff;
+                                        font-weight: 600;
+                                        text-transform: uppercase;
+                                    }
+                                }
+                                &__btn {
+                                    font-size: 16px;
+                                    font-weight: 500;
+                                    color: #fff;
+                                    text-transform: uppercase;
+                                    @include green-main-bg ;
+                                    border-radius: 10px;
+                                    text-align: center;
+                                    padding: 18px 30px;
+                                    width: max-content;
+                                    margin: 0 auto;
+                                    border: 1px solid ;
+                                    transition: 0.5s ease;
+                                    border: 1px solid #409300;
+                                    &:hover {
+                                        background-color: #fff;
+                                        @include green-main;
+                                    }
+                                }
+                                &__term {
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    color: #828282;
+                                    margin-top: 50px;
+                                }
+                                &__photo {
+                                    width: 301px;
+                                    height: 221px;
+                                    position: absolute;
+                                    bottom: 0;
+                                    right: 0;
+                                    z-index: 3;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &__btns {
+                margin-left: 20px;
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                border: 1px solid #fff;
+                display: flex;
+                background-color: #fff;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: 0.3s ease;
+                &:hover {
+                    @include green-main-bg;
+                }
+                &:hover .discount__wrap__content__btns__icon {
+                    fill: #fff;
+                }
+                &__icon {
+                    fill: #45494E;
+                    width: 20px;
+                    height: 15px;
+                    transition: 0.3s ease;
+                }
+            }
+            .discount-arrow-prev {
+                position: absolute;
+                top: 137px;
+                left: 135px;
+            }
+            .discount-arrow-next {
+                position: absolute;
+                top: 137px;
+                right: 155px;
+            }
+        }
+        &__gift-left {
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            left: 58px;
+            top: 95px;
+        }
+        &__gift-right {
+            width: 75px;
+            height: 75px;
+            position: absolute;
+            transform: rotate(50deg);
+            right: 18px;
+            bottom: 40px;
+        }
+        &__circle-two {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 116px;
+            height: 66px;
+        }
+        &__circle-big {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 171px;
+            height: 147px;
+        }
+    }
+}

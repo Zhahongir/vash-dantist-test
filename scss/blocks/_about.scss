@@ -1,0 +1,77 @@
+.about {
+    position: relative;
+    padding-top: 110px;
+    &__header {
+        &__title {
+            font-size: 42px;
+            font-weight: 500;
+            @include dark;
+            span {
+                @include green-main;
+                font-weight: 500;
+            }
+        }
+        &__subtitle {
+            font-size: 42px;
+            font-weight: 500;
+            @include dark;
+            margin-left: 50px;
+            span {
+                @include green-main;
+                font-weight: 500;
+            }
+        }
+    }
+    &__header-mob {
+        display: none;
+        &__title {
+            font-size: 36px;
+            font-weight: 500;
+            @include dark;
+            span {
+                @include green-main;
+                font-weight: 500;
+            }
+        }
+    }
+    &__wrap {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 45px;
+        &__photo {
+            width: 544px;
+            height: 363px;
+        }
+        &__content {
+            width: 600px;
+            &__title {
+                display: flex;
+                align-items: center;
+                &__circle {
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 100%;
+                    background-color: #27AE60;
+                    margin-right: 10px;
+                }
+                &__text {
+                    font-size: 22px;
+                    font-weight: 500;
+                    color: #828282;
+                }
+            }
+            &__list {
+                margin-top: 20px;
+                &__item {
+                    font-size: 18px;
+                    font-weight: 500;
+                    @include text;
+                    &:not(:last-child) {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

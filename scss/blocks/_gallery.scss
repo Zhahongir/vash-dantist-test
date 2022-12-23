@@ -1,0 +1,225 @@
+.gallery {
+    padding-top: 120px;
+    @include title;
+    padding-bottom: 100px;
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include title;
+        &__btns {
+            display: none;
+            &__el {
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                border: 1px solid rgba(28, 28, 28, 0.2);
+                display: flex;
+                background-color: #fff;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: 0.3s ease;
+                margin-left: 20px;
+                &:hover {
+                    @include green-main-bg;
+                }
+                &:hover .gallery__header__btns__el__icon {
+                    fill: #fff;
+                }
+                &__icon {
+                    fill: #45494E;
+                    width: 20px;
+                    height: 15px;
+                    transition: 0.3s ease;
+                }
+            }
+        }
+    }
+    &__wrap {
+        position: relative;
+        margin-top: 30px;
+        &__swiper {
+            width: 1050px;
+            overflow: hidden;
+            margin: 0 auto;
+            &__inner {
+                &__slide {
+                    width: 1050px;
+                    overflow: hidden;
+                    margin: 0 auto;
+                    border-radius: 10px;
+                    border: 1px solid #409300;
+                    background-color: #F9F9F9;
+                    padding: 20px 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    z-index: 10;
+                    &__before-after {
+                        width: 530px;
+                        height: 317px;
+                        position: relative;
+                        border-radius: 10px;
+                        overflow: hidden;
+                        &__before {
+                            width: 50%;
+                            height: 100%;
+                            z-index: 2;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            overflow: hidden;
+                            &__photo {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                overflow: hidden;
+                                display: block;
+                            }
+                            &__text {
+                                position: absolute;
+                                left: 0;
+                                top: 0;
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: #fff;
+                                background-color: rgba(0, 0, 0, 0.5);
+                                text-align: center;
+                                padding: 10px 20px;
+                            }
+                        }
+                        &__after {
+                            &__photo {
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                                overflow: hidden;
+                                display: block;
+                            }
+                            &__text {
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                font-size: 18px;
+                                font-weight: 500;
+                                color: #fff;
+                                background-color: rgba(0, 0, 0, 0.5);
+                                text-align: center;
+                                padding: 10px 20px;
+                            }
+                        }
+                        &__change {
+                            position: absolute;
+                            width: 3px;
+                            background-color: #fff;
+                            height: 100%;
+                            top: 0;
+                            left: 50%;
+                            z-index: 5;
+                            cursor: grabbing;
+                            &::before {
+                                content: '';
+                                background: url(../icons/before-after.svg);
+                                position: absolute;
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -50%);
+                                z-index: 10;
+                                width: 50px;
+                                height: 60px;
+                            }
+                        }
+                    }
+                    &__content {
+                        width: 440px;
+                        position: relative;
+                        &__title {
+                            font-size: 28px;
+                            font-weight: 600;
+                            @include green-main;
+                        }
+                        &__description {
+                            font-size: 17px;
+                            font-weight: 500;
+                            @include text;
+                            margin-top: 15px;
+                        }
+                        &__doctor {
+                            display: flex;
+                            align-items: center;
+                            margin-top: 25px;
+                            &__text {
+                                font-size: 18px;
+                                font-weight: 600;
+                                @include dark;
+                                margin-right: 5px;
+                            }
+                            &__name {
+                                font-size: 18px;
+                                font-weight: 600;
+                                @include green-main;
+                                transition: 0.3s ease;
+                                &:hover {
+                                    @include dark;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__btns {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            border: 1px solid rgba(28, 28, 28, 0.2);
+            display: flex;
+            background-color: #fff;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: 0.3s ease;
+            &:hover {
+                @include green-main-bg;
+            }
+            &:hover .gallery__wrap__btns__icon {
+                fill: #fff;
+            }
+            &__icon {
+                fill: #45494E;
+                width: 20px;
+                height: 15px;
+                transition: 0.3s ease;
+            }
+        }
+        .discount-arrow-prev {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0px;
+        }
+        .discount-arrow-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+        .swiper-pagination4 {
+            display: none;
+            top: 20px;
+            text-align: center;
+            position: relative !important;
+            margin-top: 20px !important;
+            margin: 0 auto !important;
+            .swiper-pagination-bullet {
+                width: 10px;
+                height: 10px;
+                margin-right: 4px;
+                margin-left: 4px;
+            }
+            .swiper-pagination-bullet-active {
+                @include green-main-bg;
+            }
+        }
+    }
+}
