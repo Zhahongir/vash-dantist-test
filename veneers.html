@@ -13,6 +13,9 @@
 
     <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <script src="https://lidrekon.ru/slep/js/jquery.js"></script>
+    <script src="https://lidrekon.ru/slep/js/uhpv-full.min.js"></script>
 </head>
 <body id="service-bg">
     <header class="header">
@@ -58,7 +61,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="header__wrap__content__eye"></a>
+                    <img id="specialButton" src="icons/eye.svg" class="header__wrap__content__eye" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
                     <a href="tel:+78137135506" class="header__wrap__content__phone-mob">
                         <img src="icons/phone-header.svg" alt="icon" class="header__wrap__content__phone-mob__icon">
                     </a>
@@ -83,10 +86,44 @@
                     <h1 class="intro__wrap__content__title">Виниры</h1>
                     <p class="intro__wrap__content__description">Виниры - это тонкие фарфоровые пластинки. <br>
                         С их помощью можно наиболее быстро получить так&nbsp;называемую «голливудскую» улыбку.</p>
-                    <a href="#" class="intro__wrap__content__btn">Записаться на прием</a>
+                    <div class="intro__wrap__content__btns">
+                        <div class="intro__wrap__content__btns__callback" data-modal="booking">Записаться на прием</div>
+                        <a href="index.html#price" class="intro__wrap__content__btns__prices">Посмотреть прайс-лист</a>
+                    </div>
                 </div>
-                <div class="intro__wrap__btn">
-                    <a href="#" class="intro__wrap__btn__link">Записаться <br> на прием</a>
+                <div class="intro__wrap__photo">
+                    <div class="intro__wrap__photo__swiper mySwiper6">
+                        <div class="intro__wrap__photo__swiper__inner swiper-wrapper">
+                            <div class="intro__wrap__photo__swiper__inner__slide swiper-slide">
+                                <a href="images/photo-1.jpg" class="intro__wrap__photo__swiper__inner__slide__photo glightbox">
+                                    <img class="intro__wrap__photo__swiper__inner__slide__photo__main" alt="photo" src="images/photo-1.jpg"/>
+                                </a>
+                                <div class="intro__wrap__photo__swiper__inner__slide__description">
+                                    <div class="intro__wrap__photo__swiper__inner__slide__description__title">Врач:</div>
+                                    <div class="intro__wrap__photo__swiper__inner__slide__description__name" data-modal="drOne">Спиваков Денис Валерьевич</div>
+                                </div>
+                            </div>
+                            <div class="intro__wrap__photo__swiper__inner__slide swiper-slide">
+                                <a href="images/photo-1.jpg" class="intro__wrap__photo__swiper__inner__slide__photo glightbox">
+                                    <img class="intro__wrap__photo__swiper__inner__slide__photo__main" alt="photo" src="images/photo-1.jpg"/>
+                                </a>
+                                <div class="intro__wrap__photo__swiper__inner__slide__description">
+                                    <div class="intro__wrap__photo__swiper__inner__slide__description__title">Врач:</div>
+                                    <div class="intro__wrap__photo__swiper__inner__slide__description__name" data-modal="drOne">Спиваков Денис Валерьевич</div>
+                                </div>
+                            </div>
+                            <div class="intro__wrap__photo__swiper__inner__slide swiper-slide">
+                                <a href="images/photo-1.jpg" class="intro__wrap__photo__swiper__inner__slide__photo glightbox">
+                                    <img class="intro__wrap__photo__swiper__inner__slide__photo__main" alt="photo" src="images/photo-1.jpg"/>
+                                </a>
+                                <div class="intro__wrap__photo__swiper__inner__slide__description">
+                                    <div class="intro__wrap__photo__swiper__inner__slide__description__title">Врач:</div>
+                                    <div class="intro__wrap__photo__swiper__inner__slide__description__name" data-modal="drOne">Спиваков Денис Валерьевич</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination6 intro__wrap__photo__pagination"></div>
                 </div>
             </div>
         </div>
@@ -102,7 +139,7 @@
             </div>
 
             <div class="cards__callback">
-                <a href="#" class="cards__callback__link">Записаться на прием</a>
+                <div class="cards__callback__link" data-modal="booking">Записаться на прием</div>
             </div>
         </div>
     </section>
@@ -129,12 +166,12 @@
                         <a href="index.html#services" class="footer__wrap__menu-one__item__link">Услуги</a>
                     </li>
                     <li class="footer__wrap__menu-one__item">
-                        <a href="index.html#discount" class="footer__wrap__menu-one__item__link">Спецпредложения</a>
+                        <a href="index.html#price" class="footer__wrap__menu-one__item__link">Стоимость услуг</a>
                     </li>
                 </ul>
                 <ul class="footer__wrap__menu-second">
                     <li class="footer__wrap__menu-second__item">
-                        <a href="index.html#gallery" class="footer__wrap__menu-second__item__link">Фотогалерея</a>
+                        <a href="index.html#discount" class="footer__wrap__menu-second__item__link">Спецпредложения</a>
                     </li>
                     <li class="footer__wrap__menu-second__item">
                         <a href="index.html#reviews" class="footer__wrap__menu-second__item__link">Отзывы</a>
@@ -200,10 +237,10 @@
                         <a href="index.html#services" class="menu__inner__wrap__list__item__link">Наши услуги</a>
                     </li>
                     <li class="menu__inner__wrap__list__item">
-                        <a href="index.html#discount" class="menu__inner__wrap__list__item__link">Спецпредложения</a>
+                        <a href="index.html#price" class="menu__inner__wrap__list__item__link">Стоимость услуг</a>
                     </li>
                     <li class="menu__inner__wrap__list__item">
-                        <a href="index.html#gallery" class="menu__inner__wrap__list__item__link">Фотогалерея</a>
+                        <a href="index.html#discount" class="menu__inner__wrap__list__item__link">Спецпредложения</a>
                     </li>
                     <li class="menu__inner__wrap__list__item">
                         <a href="index.html#reviews" class="menu__inner__wrap__list__item__link">Отзывы</a>
@@ -222,8 +259,159 @@
         </div>
     </div>
 
+    <div class="callback" id="callback"> 
+        <div class="callback__wrap">
+            <div class="callback__wrap__close">
+                <img src="icons/close.svg" alt="icon" class="callback__wrap__close__icon">
+            </div>
+            <div class="callback__wrap__content">
+                <h5 class="callback__wrap__title">Оставить заявку</h5>
+            <p class="callback__wrap__subtitle">Заполните форму и&nbsp;наш специалист позвонит в&nbsp;течение нескольких минут для уточнения деталей!</p>
+            <form action="#" class="callback__wrap__form">
+                <div class="callback__wrap__form__item">
+                    <label for="name" class="callback__wrap__form__item__label">Ваше имя:</label>
+                    <input type="text" id="name" class="callback__wrap__form__item__input" placeholder="Иван">
+                </div>
+                <div class="callback__wrap__form__item">
+                    <label for="surname" class="callback__wrap__form__item__label">Ваша фамилия:</label>
+                    <input type="text" id="surname" class="callback__wrap__form__item__input" placeholder="Иванов">
+                </div>
+                <div class="callback__wrap__form__item">
+                    <label for="phone" class="callback__wrap__form__item__label">Номер телефона:</label>
+                    <input type="text" id="phone" class="callback__wrap__form__item__input" placeholder="+7 999 999-99-99">
+                </div>
+                <div class="callback__wrap__form__select">
+                    <div class="callback__wrap__form__select__title">Выберите услугу:</div>
+                    <div class="callback__wrap__form__select__wrap">
+                        <select name="select" id="" class="callback__wrap__form__select__wrap__item">
+                            <option value="6" class="callback__wrap__form__select__wrap__item__option">Виниры</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="callback__wrap__form__privacy">
+                    <input type="checkbox" checked id="checkbox" class="callback__wrap__form__privacy__checkbox">
+                    <label for="checkbox" class="callback__wrap__form__privacy__text">Нажимая кнопку «Отправить заявку», Вы подтверждайте, что ознакомились с&nbsp;<a href="privacy.html" target="_blank">политикой конфиденциальности</a> и принимайте их.</label>
+                </div>
+                <button type="submit" class="callback__wrap__form__btn">Отправить заявку</button>
+            </form>
+            </div>
+            
+        </div>
+    </div>
 
 
+    <div class="personal" id="first-doctor">
+        <div class="personal__wrap">
+            <img src="icons/close.svg" alt="close" class="personal__wrap__close" id="first-doctor-close">
+            <div class="personal__wrap__content">
+                <img src="images/team/doctor-1-1.webp" alt="photo" class="personal__wrap__content__photo">
+                <div class="personal__wrap__content__info">
+                    <h4 class="personal__wrap__content__info__name">Спиваков Денис Валерьевич</h4>
+                    <div class="personal__wrap__content__info__biography">
+                        <div class="personal__wrap__content__info__biography__item"><span>Должность:</span> главный врач, хирург, врач-стоматолог, имплантолог, ортодонт, ортопед</div>
+                        <div class="personal__wrap__content__info__biography__item"><span>Опыт:</span> с 2002 года</div>
+                        <div class="personal__wrap__content__info__biography__education">
+                            <p class="personal__wrap__content__info__biography__education__title">Образование:</p>
+                            <div class="personal__wrap__content__info__biography__education__text">В 1999 году поступил в Ейский медицинский колледж по специальности - зубной врач, окончил с отличием. По окончании колледжа поступил в Санкт-Петербургский государственный медицинский университет имени академика И.П. Павлова по специализации врач-стоматолог. Позже было получено дополнительное образование по специальностям: хирургия, ортопедия и ортодонтия. Постоянно повышает свою квалификацию на различных семинарах, курсах, вебинарах, конгрессах.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="personal" id="second-doctor">
+        <div class="personal__wrap">
+            <img src="icons/close.svg" alt="close" class="personal__wrap__close" id="second-doctor-close">
+            <div class="personal__wrap__content">
+                <img src="images/team/doctor-2.webp" alt="photo" class="personal__wrap__content__photo">
+                <div class="personal__wrap__content__info">
+                    <h4 class="personal__wrap__content__info__name">Любарская Оксана Александровна</h4>
+                    <div class="personal__wrap__content__info__biography">
+                        <div class="personal__wrap__content__info__biography__item"><span>Должность:</span> врач высшей категории, стоматолог-терапевт</div>
+                        <div class="personal__wrap__content__info__biography__item"><span>Опыт:</span> с 2002 года</div>
+                        <div class="personal__wrap__content__info__biography__education">
+                            <p class="personal__wrap__content__info__biography__education__title">Образование:</p>
+                            <div class="personal__wrap__content__info__biography__education__text">В 1997 году окончила Кемеровскую государственную медицинскую академию по специальности Врач-стоматолог общей практики. Интернатуру проходила в Санкт-Петербургском государственном медицинском университете имени академика И.П. Павлова по специальности «Стоматология терапевтическая». С 2014 года имеет высшую категорию врача-стоматолога. Постоянно повышает свою квалификацию на различных семинарах, курсах, вебинарах, конгрессах. 
+                                <br><br> 
+                                В стоматологии «Ваш Дантист» осуществляет терапевтический и эндодонтический приемы в соответствии с протоколами (лечение кариеса различной сложности, лечение пульпитов/периодонтитов, лечение и перелечивание корневых каналов)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="personal" id="third-doctor">
+        <div class="personal__wrap">
+            <img src="icons/close.svg" alt="close" class="personal__wrap__close" id="third-doctor-close">
+            <div class="personal__wrap__content">
+                <img src="images/team/doctor-3.webp" alt="photo" class="personal__wrap__content__photo">
+                <div class="personal__wrap__content__info">
+                    <h4 class="personal__wrap__content__info__name">Пенькова Ксения Вадимовна</h4>
+                    <div class="personal__wrap__content__info__biography">
+                        <div class="personal__wrap__content__info__biography__item"><span>Должность:</span> врач стоматолог-терапевт</div>
+                        <div class="personal__wrap__content__info__biography__item"><span>Опыт:</span> с 2002 года</div>
+                        <div class="personal__wrap__content__info__biography__education">
+                            <p class="personal__wrap__content__info__biography__education__title">Образование:</p>
+                            <div class="personal__wrap__content__info__biography__education__text">В 2014 году окончила Читинскую государственную медицинскую академию Министерства здравоохранения Российской Федерации по специальности «Врач-стоматолог». Также имеет сертификат по специальности «Стоматология ортопедическая». Постоянно повышает свою квалификацию на различных семинарах, курсах, вебинарах, конгрессах.
+                                <br><br> 
+                                В стоматологии «Ваш Дантист» осуществляет терапевтический и эндодонтический приемы в соответствии с протоколами (лечение кариеса различной сложности, лечение пульпитов/периодонтитов, лечение и перелечивание корневых каналов). Занимается анализом КТ, ОПТГ, прицельных рентгенограмм. При необходимости составляет план лечения, рекомендует смежных специалистов.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="personal" id="four-doctor">
+        <div class="personal__wrap">
+            <img src="icons/close.svg" alt="close" class="personal__wrap__close" id="four-doctor-close">
+            <div class="personal__wrap__content">
+                <img src="images/team/doctor-4.webp" alt="photo" class="personal__wrap__content__photo">
+                <div class="personal__wrap__content__info">
+                    <h4 class="personal__wrap__content__info__name">Гомота Юлиана Юрьевна</h4>
+                    <div class="personal__wrap__content__info__biography">
+                        <div class="personal__wrap__content__info__biography__item"><span>Должность:</span> детский врач-стоматолог</div>
+                        <div class="personal__wrap__content__info__biography__item"><span>Опыт:</span> с 2002 года</div>
+                        <div class="personal__wrap__content__info__biography__education">
+                            <p class="personal__wrap__content__info__biography__education__title">Образование:</p>
+                            <div class="personal__wrap__content__info__biography__education__text">В 2017 окончила Санкт-Петербургский государственный медицинский университет имени академика И.П. Павлова по специальности «Врач-стоматолог общей практики». Постоянно повышает свою квалификацию на различных семинарах, курсах, вебинарах, конгрессах.
+                                <br><br> 
+                                В стоматологии «Ваш Дантист» осуществляет детские терапевтический и эндодонтический. Занимается анализом КТ, ОПТГ, прицельных рентгенограмм. При необходимости составляет план лечения, рекомендует смежных специалистов. Юлиана Юрьевна может найти подход к любому ребенку и создать максимально комфортный и теплый прием.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="personal" id="five-doctor">
+        <div class="personal__wrap">
+            <img src="icons/close.svg" alt="close" class="personal__wrap__close" id="five-doctor-close">
+            <div class="personal__wrap__content">
+                <img src="images/team/doctor-5.webp" alt="photo" class="personal__wrap__content__photo">
+                <div class="personal__wrap__content__info">
+                    <h4 class="personal__wrap__content__info__name">Успенская Дарья Романовна</h4>
+                    <div class="personal__wrap__content__info__biography">
+                        <div class="personal__wrap__content__info__biography__item"><span>Должность:</span> врач стоматолог-микроскопист</div>
+                        <div class="personal__wrap__content__info__biography__item"><span>Опыт:</span> с 2002 года</div>
+                        <div class="personal__wrap__content__info__biography__education">
+                            <p class="personal__wrap__content__info__biography__education__title">Образование:</p>
+                            <div class="personal__wrap__content__info__biography__education__text">В 2021 году окончила Ярославский государственный медицинский университет по специальности «Врач-стоматолог общей практики». Постоянно повышает свою квалификацию на различных семинарах, курсах, вебинарах, конгрессах.
+                                <br><br> 
+                                В стоматологии «Ваш Дантист» осуществляет терапевтический и эндодонтический приемы в соответствии с протоколами (лечение кариеса различной сложности, лечение пульпитов/периодонтитов, лечение и перелечивание корневых каналов) с помощью микроскопа. Занимается анализом КТ, ОПТГ, прицельных рентгенограмм. При необходимости составляет план лечения, рекомендует смежных специалистов. Занимается также профессиональной гигиеной полости рта, кабинетным отбеливанием, изготавливает каппы для домашнего отбеливания, владеет всеми видами ремтерапии и лечением болезней десен (аппарат Вектор).
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <svg display="none">
         <symbol id="arrow-prev" viewBox="0 0 20 15">
@@ -250,12 +438,85 @@
     <script src="js/sliders.js"></script>
 
     <script>
+        $(document).ready(function() { 
+
+        $('[data-modal=drFive]').on('click', function() {
+            $('#five-doctor').fadeIn();
+        });
+        $('.personal__wrap__close').on('click', function() {
+            $('#five-doctor').fadeOut();
+        });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() { 
+
+        $('[data-modal=drFour]').on('click', function() {
+            $('#four-doctor').fadeIn();
+        });
+        $('.personal__wrap__close').on('click', function() {
+            $('#four-doctor').fadeOut();
+        });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() { 
+
+        $('[data-modal=drThird]').on('click', function() {
+            $('#third-doctor').fadeIn();
+        });
+        $('.personal__wrap__close').on('click', function() {
+            $('#third-doctor').fadeOut();
+        });
+        });
+    </script>
+    
+    <script>
+        $(document).ready(function() { 
+
+        $('[data-modal=drSecond]').on('click', function() {
+            $('#second-doctor').fadeIn();
+        });
+        $('.personal__wrap__close').on('click', function() {
+            $('#second-doctor').fadeOut();
+        });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function() { 
+
+        $('[data-modal=drOne]').on('click', function() {
+            $('#first-doctor').fadeIn();
+        });
+        $('.personal__wrap__close').on('click', function() {
+            $('#first-doctor').fadeOut();
+        });
+        });
+    </script>
+
+    <script>
         $(window).scroll(function() {
         if ($(document).scrollTop() > 82) {
             $("header").addClass("animate-header");
                 } else {
             $("header").removeClass("animate-header");
             }
+        });
+    </script>
+
+    <script>
+        // Form
+        $(document).ready(function() { 
+
+        $('[data-modal=booking]').on('click', function() {
+            $('#callback').fadeIn();
+        });
+        $('.callback__wrap__close').on('click', function() {
+            $('#callback').fadeOut();
+        });
         });
     </script>
 </body>

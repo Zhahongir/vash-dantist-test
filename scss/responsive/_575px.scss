@@ -659,4 +659,73 @@
     .cards__wrap__full {
         padding: 30px 15px 30px 15px;
     }
+
+    .intro__wrap__content__btns {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .intro__wrap__content__btns__callback {
+        width: 290px;
+        text-align: center;
+        font-size: 16px;
+        padding: 16px;
+    }
+
+    .intro__wrap__content__btns__prices {
+        font-size: 16px;
+        width: 290px;
+        text-align: center;
+        margin-top: 15px;
+        padding: 16px;
+    }
+
+    .intro__wrap__photo__swiper__inner__slide {
+        width: 100% !important;
+    }
+
+    .callback {
+        background-color: #fff;
+    }
+
+    .callback__wrap__title {
+        font-size: 20px;
+    }
+
+    .callback__wrap {
+        width: 100%;
+        left: 0;
+        top: 10px;
+        transform: translate(0, 0);
+    }
+
+    .callback__wrap__close {
+        top: 0px;
+    }
+
+    .callback__wrap__subtitle {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    .callback__wrap__content {
+        padding: 40px 15px 45px 15px;
+    }
+
+    .callback__wrap__form__btn {
+        padding: 16px;
+    }
+
+    .callback__wrap__form__item__input {
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+
+    .callback__wrap__form__item__input::placeholder {
+        font-size: 16px;
+    }
+
+    .callback__wrap__form__select__wrap__item {
+        padding-left: 15px;
+    }
 }

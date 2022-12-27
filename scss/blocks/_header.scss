@@ -172,10 +172,7 @@
             &__eye {
                 width: 31px;
                 height: 21px;
-                background: url(../icons/eye.svg);
-                background-position: center;
-                background-size: cover;
-                background-repeat: no-repeat;
+                cursor: pointer;
                 transition: 0.3s ease;
                 margin-right: 40px;
                 &:hover {

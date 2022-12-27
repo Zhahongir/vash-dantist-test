@@ -156,8 +156,6 @@ const beforeImage = before.querySelector('img');
 const change = document.querySelector('.gallery__wrap__swiper__inner__slide__before-after__change');
 const body = document.body;
 
-
-
 let isActive = false;
 
 document.addEventListener('DOMContentLoaded', () => {

@@ -95,6 +95,7 @@
         border: 1px solid ;
         transition: 0.5s ease;
         border: 1px solid #409300;
+        cursor: pointer;
         &:hover {
             background-color: #fff;
             @include green-main;

@@ -157,3 +157,36 @@ var swiper = new Swiper(".mySwiper5", {
     }
   }
 });
+
+
+// Service Slider
+var swiper = new Swiper(".mySwiper6", {
+  loop: false,
+  spaceBetween: 0,
+  slidesPerView: 1,
+  pagination: {
+    el: ".swiper-pagination6",
+  },
+  breakpoints: {
+    993: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    992: {
+      slidesPerView: 2,
+      spaceBetween: 90,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 46,
+    },
+    576: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    },
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 0,
+    }
+  }
+});

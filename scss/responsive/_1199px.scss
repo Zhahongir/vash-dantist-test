@@ -240,10 +240,25 @@
 
     .intro__wrap__content {
         margin-right: 0px;
+        width: 650px;
     }
 
     .intro__wrap {
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .intro__wrap__photo {
+        width: 100%;
+        margin-top: 35px;
+    }
+
+    .intro__wrap__photo__swiper {
+        width: 850px;
+    }
+
+    .intro__wrap__photo__swiper__inner__slide {
+        width: 360px;
     }
 
     .intro__wrap {
@@ -280,5 +295,20 @@
 
     .cards__wrap__full__right__danger {
         width: 380px;
+    }
+
+    .personal__wrap {
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+
+    .personal {
+        background-color: #fff;
+    }
+
+    .personal__wrap__content {
+        padding-bottom: 30px;
     }
 }

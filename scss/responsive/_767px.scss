@@ -407,4 +407,36 @@
         width: 540px;
         left: calc((100% - 540px) / 2);
     }
+
+    .intro__wrap__content__btns {
+        justify-content: space-between;
+    }
+
+    .intro__wrap__content__btns__callback {
+        padding: 18px 20px;
+        margin-right: 0px;
+        font-size: 15px;
+    }
+
+    .intro__wrap__content__btns__prices {
+        padding: 18px 20px;
+        font-size: 15px;
+    }
+
+    .intro__wrap__photo__swiper__inner__slide {
+        width: 476px !important;
+    }
+
+    .callback__wrap {
+        width: 90%;
+    }
+
+    .callback__wrap__close {
+        top: 5px;
+        right: 5px;
+    }
+
+    .callback__wrap__content {
+        padding: 40px 25px 45px 25px;
+    }
 }

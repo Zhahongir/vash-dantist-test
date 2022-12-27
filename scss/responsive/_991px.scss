@@ -370,11 +370,11 @@
 
     .intro__wrap__content__description {
         font-size: 18px;
-        width: 390px;
+        width: 100%;
     }
 
     .intro__wrap__content {
-        width: 390px;
+        width: 100%;
     }
 
     .intro__wrap__btn__link {
@@ -501,4 +501,24 @@
         font-size: 16px;
     }
 
+    .intro__wrap__photo__swiper {
+        width: 100%;
+    }
+
+    .intro__wrap__photo__swiper__inner__slide {
+        width: 310px !important;
+    }
+
+    .intro__wrap__photo__swiper__inner__slide__description__name {
+        font-size: 16px;
+    }
+
+    .intro__wrap__photo__swiper__inner__slide__description__title {
+        font-size: 16px;
+    }
+
+    .callback__wrap {
+        width: 600px;
+    }
+    
 }

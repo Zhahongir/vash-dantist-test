@@ -1,4 +1,4 @@
-
+// Doctors Card
 var modal = document.getElementById("first-doctor");
 var modalSecond = document.getElementById("second-doctor");
 var modalThird = document.getElementById("third-doctor");
@@ -182,3 +182,16 @@ closeBtnThirteen.onclick = function() {
 //     bodyOverflow.style.overflowY = "scroll";
 //   }
 // }
+
+
+
+// Form
+$(document).ready(function() { 
+
+  $('[data-modal=booking]').on('click', function() {
+      $('#callback').fadeIn();
+  });
+  $('.callback__wrap__close').on('click', function() {
+      $('#callback').fadeOut();
+  });
+});
