@@ -150,10 +150,12 @@ var swiper = new Swiper(".mySwiper5", {
     },
     576: {
       slidesPerView: 1,
+      autoHeight: true,
       spaceBetween: 0,
     },
     320: {
       slidesPerView: 1,
+      autoHeight: true,
       spaceBetween: 0,
     }
   }
