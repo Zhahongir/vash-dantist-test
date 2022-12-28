@@ -355,8 +355,11 @@
 
     .intro__wrap {
         padding-top: 70px;
+        flex-direction: column;
         height: auto;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
+        align-items: baseline;
+        margin-left: 0;
     }
 
     .intro__wrap__content__title {
@@ -501,12 +504,17 @@
         font-size: 16px;
     }
 
+    .intro__wrap__photo {
+        margin-top: 35px;
+        width: 400px;
+    }
+
     .intro__wrap__photo__swiper {
         width: 100%;
     }
 
     .intro__wrap__photo__swiper__inner__slide {
-        width: 310px !important;
+        width: 400px !important;
     }
 
     .intro__wrap__photo__swiper__inner__slide__description__name {
@@ -521,4 +529,7 @@
         width: 600px;
     }
     
+    .intro__wrap__photo__swiper__inner__slide__description__list__item {
+        font-size: 16px;
+    }
 }

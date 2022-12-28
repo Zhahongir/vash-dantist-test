@@ -572,7 +572,7 @@
         padding-top: 45px;
         padding-left: 15px;
         padding-right: 15px;
-        padding-bottom: 50px;
+        padding-bottom: 50px !important;
     }
 
     .intro__wrap__content__title {
@@ -748,5 +748,15 @@
 
     .callback__wrap__form__select__wrap__item {
         padding-left: 15px;
+    }
+
+    .contacts__wrap-mob__list .contacts__wrap-mob__calendar__time__weekdays {
+        margin-right: 0px;
+    }
+
+    .contacts__wrap-mob__list .contacts__wrap-mob__calendar__time {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
 }

@@ -240,29 +240,43 @@
 
     .intro__wrap__content {
         margin-right: 0px;
-        width: 650px;
+        width: 500px;
     }
 
-    .intro__wrap {
-        flex-direction: column;
-        align-items: baseline;
+    .intro__wrap__content__btns__callback {
+        padding: 18px 20px;
+        text-align: center;
+        margin-right: 15px;
+    }
+
+    .intro__wrap__content__btns__prices {
+        text-align: center;
+        padding: 18px 20px;
     }
 
     .intro__wrap__photo {
-        width: 100%;
-        margin-top: 35px;
+        width: 310px;
     }
 
     .intro__wrap__photo__swiper {
-        width: 850px;
+        width: 100%;
     }
 
     .intro__wrap__photo__swiper__inner__slide {
-        width: 360px;
+        width: 310px;
+    }
+
+    .intro__wrap__photo__swiper__inner__slide__photo__main {
+        height: auto;
+    }
+
+    .intro__wrap__photo__swiper__inner__slide__description__list__item {
+        font-size: 16px;
     }
 
     .intro__wrap {
-        padding-right: 55px;
+        padding-right: 25px;
+        margin-left: 25px;
     }
 
     .intro__wrap__content__title {
@@ -310,5 +324,9 @@
 
     .personal__wrap__content {
         padding-bottom: 30px;
+    }
+
+    .contacts__wrap__right__calendar__time__weekdays {
+        margin-right: 25px;
     }
 }

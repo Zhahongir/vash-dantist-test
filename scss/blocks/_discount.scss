@@ -1,9 +1,10 @@
 .discount {
     position: relative;
     padding-top: 100px;
+    display: none;
     &__wrap {
         position: relative;
-        background-color: #219653;
+        @include green-main-bg;
         width: 100%;
         border-radius: 10px;
         padding-top: 50px;

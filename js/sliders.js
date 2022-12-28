@@ -145,6 +145,7 @@ var swiper = new Swiper(".mySwiper5", {
     },
     768: {
       slidesPerView: 1,
+      autoHeight: true,
       spaceBetween: 0,
     },
     576: {
@@ -173,12 +174,12 @@ var swiper = new Swiper(".mySwiper6", {
       spaceBetween: 0,
     },
     992: {
-      slidesPerView: 2,
-      spaceBetween: 90,
+      slidesPerView: 1,
+      spaceBetween: 0,
     },
     768: {
-      slidesPerView: 2,
-      spaceBetween: 46,
+      slidesPerView: 1,
+      spaceBetween: 0,
     },
     576: {
       slidesPerView: 1,

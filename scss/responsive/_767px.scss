@@ -331,6 +331,11 @@
         margin-bottom: 25px;
     }
 
+    .intro__wrap {
+        padding-bottom: 50px !important;
+    }
+
+
     .intro__wrap__btn__link {
         display: none;
     }
@@ -423,8 +428,12 @@
         font-size: 15px;
     }
 
+    .intro__wrap__photo {
+        width: 100%;
+    }
+
     .intro__wrap__photo__swiper__inner__slide {
-        width: 476px !important;
+        width: 100% !important;
     }
 
     .callback__wrap {
@@ -439,4 +448,13 @@
     .callback__wrap__content {
         padding: 40px 25px 45px 25px;
     }
+
+    .contacts__wrap-mob__list .contacts__wrap-mob__calendar__time__weekdays {
+        margin-right: 40px;
+    }
+
+    .intro__wrap__photo__swiper__inner__slide__description__list__item {
+        font-size: 16px;
+    }
+
 }
