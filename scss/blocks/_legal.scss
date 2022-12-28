@@ -1,0 +1,59 @@
+.legal {
+    padding-top: 130px;
+    padding-bottom: 70px;
+    &__title {
+        font-size: 36px;
+        font-weight: 600;
+        @include green-main;
+        text-align: center;
+    }
+    &__wrap {
+        position: relative;
+        margin-top: 40px;
+        &__header {
+            position: relative;
+            &__title {
+                font-size: 24px;
+                @include dark;
+                font-weight: 500;
+            }
+            &__subtitle {
+                font-size: 18px;
+                font-weight: 400;
+                @include dark;
+                margin-top: 10px;
+            }
+        }
+        &__content {
+            margin-top: 35px;
+            &__text {
+                font-size: 18px;
+                font-weight: 500;
+                @include text;
+                margin-bottom: 25px;
+            }
+            &__list {
+                position: relative;
+                margin-top: 20px;
+                &__item {
+                    font-size: 18px;
+                    font-weight: 500;
+                    @include text;
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+                    &:last-child {
+                        margin-bottom: 30px;
+                    }
+                }
+                .legal__item__ml {
+                    margin-left: 20px;
+                    margin-bottom: 5px;
+                    &:last-child {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+    }
+}

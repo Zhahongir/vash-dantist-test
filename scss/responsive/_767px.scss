@@ -97,6 +97,16 @@
         height: 45px;
     }
 
+    .team__header__wrap__btns__el {
+        width: 45px;
+        height: 45px;
+    }
+
+    .team__header__wrap__btns__el__icon {
+        width: 18px;
+        height: 13px;
+    }
+
     .team__header__wrap .title {
         margin-top: 5px;
     }
@@ -335,7 +345,6 @@
         padding-bottom: 50px !important;
     }
 
-
     .intro__wrap__btn__link {
         display: none;
     }
@@ -457,4 +466,32 @@
         font-size: 16px;
     }
 
+    .footer__basement {
+        align-items: center;
+    }
+    
+    .footer__basement__left {
+        margin-bottom: 15px;
+        order: 2;
+    }
+
+    .footer__basement__right {
+        margin-bottom: 20px;
+    }
+
+    .footer__basement__right__legal {
+        font-size: 16px;
+    }
+
+    .footer__basement__right__privacy {
+        font-size: 16px;
+    }
+
+    .footer {
+        padding-bottom: 20px;
+    }
+
+    .legal__wrap__header__title {
+        font-size: 20px;
+    }
 }

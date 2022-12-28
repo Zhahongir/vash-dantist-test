@@ -30,7 +30,7 @@
                 font-size: 14px;
                 font-weight: 500;
                 color: #828282;
-                margin-top: 10px;
+                margin-top: 15px;
             }
         }
         &__menu-one {
@@ -91,7 +91,6 @@
                 font-weight: 600;
                 @include dark;
                 transition: 0.3s ease;
-                margin-bottom: 13px;
                 display: block;
                 &:hover {
                     @include green-main;
@@ -100,13 +99,14 @@
             &__whatsapp {
                 display: flex;
                 align-items: center;
+                margin-bottom: 13px;
                 &__number {
                     font-size: 20px;
                     font-weight: 600;
                     @include dark;
                     transition: 0.3s ease;
                     margin-right: 10px;
-                    margin-top: 4px;
+                    margin-top: 3px;
                     &:hover {
                         @include green-main;
                     }
@@ -139,24 +139,50 @@
     &__basement {
         display: flex;
         justify-content: space-between;
-        &__document {
-            font-size: 14px;
-            font-weight: 500;
-            color: #828282;
+        align-items: flex-end;
+        &__left {
+            display: flex;
+            flex-direction: column;
+            &__document {
+                font-size: 14px;
+                font-weight: 500;
+                color: #828282;
+            }
+            &__organization {
+                font-size: 14px;
+                font-weight: 500;
+                color: #828282;
+                margin-bottom: 10px;
+            }
         }
         &__since {
             font-size: 14px;
             font-weight: 500;
             color: #828282;
         }
-        &__privacy {
-            font-size: 16px;
-            font-weight: 500;
-            color: #828282;
-            transition: 0.3s ease;
-            &:hover {
-                @include green-main;
+        &__right {
+            display: flex;
+            flex-direction: column;
+            &__legal {
+                font-size: 16px;
+                margin-bottom: 10px;
+                font-weight: 500;
+                color: #828282;
+                transition: 0.3s ease;
+                &:hover {
+                    @include green-main;
+                }
+            }
+            &__privacy {
+                font-size: 16px;
+                font-weight: 500;
+                color: #828282;
+                transition: 0.3s ease;
+                &:hover {
+                    @include green-main;
+                }
             }
         }
+        
     }
 }

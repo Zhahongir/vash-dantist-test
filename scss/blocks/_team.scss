@@ -28,7 +28,6 @@
             &__btns {
                 display: flex;
                 align-items: center;
-                display: none;
                 &__el {
                     margin-left: 20px;
                     width: 50px;
@@ -58,7 +57,14 @@
     }
     &__wrap {
         margin-top: 35px;
+        .team__card__small {
+            justify-content: flex-start;
+            .team__wrap__content__item__info {
+                width: 787px;
+            }
+        }
         &__content__item {
+            margin-top: 35px;
             width: 100%;
             display: flex;
             background-color: #F9F9F9;
@@ -125,6 +131,7 @@
                 &__slider {
                     width: 220px;
                     padding-top: 5px;
+                    cursor: pointer;
                     &__photo {
                         width: 224px;
                         display: block !important;
@@ -135,10 +142,7 @@
                         cursor: pointer;
                         padding: 0 !important;
                         transition: 0.2s ease;
-                    }
-                    .tabheader__item_active {
-                        outline: 2px solid #27AE60;
-                        border-radius: 10px;
+                        pointer-events: none;
                     }
                     &__info {
                         display: flex;
@@ -146,6 +150,7 @@
                         align-items: baseline;
                         margin-top: 10px;
                         width: 224px;
+                        pointer-events: none;
                         &__name {
                             font-size: 20px;
                             font-weight: 500;
@@ -180,6 +185,7 @@
         margin-top: 30px;
         align-items: center;
         justify-content: space-between;
+        display: none;
         &__pagination {
             display: block !important;
             position: relative !important;
@@ -281,6 +287,11 @@
         }
     }
     
+}
+
+.tabheader__item_active .team__wrap__swiper__inner__slider__photo {
+    outline: 2px solid #27AE60;
+    border-radius: 10px;
 }
 
 .fade {
@@ -430,6 +441,10 @@
 }
 
 #thirteen-doctor {
+    display: none;
+}
+
+#fourteen-doctor {
     display: none;
 }
 

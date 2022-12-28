@@ -11,6 +11,18 @@
         display: none;
     }
 
+    .header__wrap__content__eye {
+        margin-right: 40px;
+    }
+
+    .header__wrap__content__callback {
+        margin-right: 40px;
+    }
+
+    .header__wrap__content__callback__whatsapp {
+        margin-right: 20px;
+    }
+
     .promo__wrap__content__title {
         font-size: 42px;
     }
@@ -328,5 +340,9 @@
 
     .contacts__wrap__right__calendar__time__weekdays {
         margin-right: 25px;
+    }
+
+    .team__wrap .team__card__small .team__wrap__content__item__info {
+        width: 100%;
     }
 }
