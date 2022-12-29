@@ -98,8 +98,14 @@
                                     <img class="intro__wrap__photo__swiper__inner__slide__photo__main" alt="photo" src="images/caries-1.jpg"/>
                                 </a>
                                 <div class="intro__wrap__photo__swiper__inner__slide__description">
-                                    <div class="intro__wrap__photo__swiper__inner__slide__description__title">Врач:</div>
-                                    <div class="intro__wrap__photo__swiper__inner__slide__description__name" data-modal="drOne">Спиваков Денис Валерьевич</div>
+                                    <div class="intro__wrap__photo__swiper__inner__slide__description__title">Врачи:</div>
+                                    <ul class="intro__wrap__photo__swiper__inner__slide__description__list">
+                                        <li class="intro__wrap__photo__swiper__inner__slide__description__list__item" data-modal="drSecond">Любарская Оксана Александровна</li>
+                                        <li class="intro__wrap__photo__swiper__inner__slide__description__list__item" data-modal="drThird">Пенькова Ксения Вадимовна</li>
+                                        <li class="intro__wrap__photo__swiper__inner__slide__description__list__item" data-modal="drFour">Гомота Юлиана Юрьевна</li>
+                                        <li class="intro__wrap__photo__swiper__inner__slide__description__list__item" data-modal="drSix">Смирнова Вероника Евгеньевна</li>
+                                        <li class="intro__wrap__photo__swiper__inner__slide__description__list__item" data-modal="drFive">Успенская Дарья Романовна</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -405,6 +411,26 @@
         </div>
     </div>
 
+    <div class="personal" id="six-doctor">
+        <div class="personal__wrap">
+            <img src="icons/close.svg" alt="close" class="personal__wrap__close" id="six-doctor-close">
+            <div class="personal__wrap__content">
+                <img src="images/team/doctor-5.webp" alt="photo" class="personal__wrap__content__photo">
+                <div class="personal__wrap__content__info">
+                    <h4 class="personal__wrap__content__info__name">Смирнова Вероника Евгеньевна</h4>
+                    <div class="personal__wrap__content__info__biography">
+                        <div class="personal__wrap__content__info__biography__item"><span>Должность:</span> врач стоматолог-микроскопист</div>
+                        <div class="personal__wrap__content__info__biography__education">
+                            <p class="personal__wrap__content__info__biography__education__title">Образование:</p>
+                            <div class="personal__wrap__content__info__biography__education__text">Окончила в 2020 году Санкт-Петербургский государственный медицинский университет имени академика И.П. Павлова по специальности «Стоматология»
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
     <svg display="none">
@@ -431,6 +457,18 @@
     <script src="js/accordion.js"></script>
     <script src="js/sliders.js"></script>
     <script src="js/modals.js"></script>
+
+    <script>
+        $(document).ready(function() { 
+
+        $('[data-modal=drSix]').on('click', function() {
+            $('#six-doctor').fadeIn();
+        });
+        $('.personal__wrap__close').on('click', function() {
+            $('#six-doctor').fadeOut();
+        });
+        });
+    </script>
 
     <script>
         $(document).ready(function() { 
