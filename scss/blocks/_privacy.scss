@@ -1,0 +1,41 @@
+.privacy {
+    padding-top: 160px;
+    padding-bottom: 70px;
+    &__title {
+        font-size: 24px;
+        font-weight: 500;
+        @include dark;
+    }
+    &__wrap {
+        margin-top: 30px;
+        &__title {
+            font-size: 20px;
+            font-weight: 500;
+            @include dark;
+        }
+        &__subtitle {
+            margin-top: 15px;
+            font-size: 18px;
+            font-weight: 500;
+            @include text;
+        }
+        &__list {
+            margin-top: 15px;
+            margin-left: 20px;
+            &__item {
+                font-size: 18px;
+                margin-bottom: 10px;
+                font-weight: 500;
+                @include text;
+                a {
+                    @include green-main;
+                    font-weight: 600;
+                    transition: 0.3s ease;
+                    &:hover {
+                        @include dark;
+                    }
+                }
+            }
+        }
+    }
+}

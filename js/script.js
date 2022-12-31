@@ -6,11 +6,13 @@ window.addEventListener('DOMContentLoaded', () => {
     menuItem = document.querySelectorAll('.menu__inner__wrap__list__item__link'),
     hamburger = document.querySelector('.header__wrap__content__hamburger'),
     bgMenu = document.querySelector('.bg-menu');
+    bodyBack = document.getElementById('htmlOveflow');
   
     hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('hamburger_active');
         menu.classList.toggle('menu_active');
         bgMenu.classList.toggle('bg-menu-active');
+        // bodyBack.style.overflowY='hidden';
     });
 
     menuItem.forEach(item => {
@@ -18,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
             bgMenu.classList.toggle('bg-menu-active');
+            // bodyBack.style.overflowY='scroll';
         });
     });
 
@@ -34,6 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
             hamburger.classList.toggle('hamburger_active');
             menu.classList.toggle('menu_active');
             bgMenu.classList.toggle('bg-menu-active');
+            // bodyBack.style.overflowY='scroll';
         });
     });
 });
@@ -227,3 +231,4 @@ body.addEventListener('touchmove', (e) => {
   beforeAfterSlider(x);
   pauseEvents(e);
 });
+

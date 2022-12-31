@@ -3,7 +3,7 @@
         width: 540px;
     }
 
-    .header__wrap__content__callback {
+    .header__wrap__content__callback__info {
         display: none;
     }
 
@@ -13,6 +13,15 @@
 
     .header__wrap__content__phone-mob {
         display: flex;
+        margin-right: 30px;
+    }
+
+    .header__wrap__content__callback {
+        margin-right: 0;
+        display: none;
+    }
+
+    .header__wrap__content__callback__whatsapp {
         margin-right: 30px;
     }
 
@@ -492,6 +501,14 @@
     }
 
     .legal__wrap__header__title {
+        font-size: 20px;
+    }
+
+    .header__wrap__content__whatsapp-mob {
+        display: block;
+    }
+
+    .privacy__title {
         font-size: 20px;
     }
 }

@@ -61,7 +61,10 @@
                             </div>
                         </div>
                     </div>
-                    <img id="specialButton" src="icons/eye.svg" class="header__wrap__content__eye" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
+                    <img src="icons/eye.svg" class="header__wrap__content__eye" alt="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" title="ВЕРСИЯ ДЛЯ СЛАБОВИДЯЩИХ" />
+                    <a href="https://wa.me/+79522000047" target="_blank" class="header__wrap__content__whatsapp-mob">
+                        <img src="icons/whatsapp-header.svg" alt="WhatsApp" class="header__wrap__content__whatsapp-mob__icon">
+                    </a>
                     <a href="tel:+79522000047" class="header__wrap__content__phone-mob">
                         <img src="icons/phone-header.svg" alt="icon" class="header__wrap__content__phone-mob__icon">
                     </a>
@@ -212,6 +215,11 @@
                     <p class="menu__inner__wrap__header__title">Навигация по сайту</p>
                 </div>
                 <ul class="menu__inner__wrap__list">
+                    <li class="menu__inner__wrap__list__item menu__item__eye">
+                        <a id="specialButton" href="#" class="menu__item__eye__link">
+                            <div class="menu__inner__wrap__list__item__link menu__item__eye__link__text">Версия для слабовидящих</div>
+                        </a>
+                    </li>
                     <li class="menu__inner__wrap__list__item">
                         <a href="index.html#aboutus" class="menu__inner__wrap__list__item__link">О клинике</a>
                     </li>
@@ -499,6 +507,16 @@
             $('#callback').fadeOut();
         });
         });
+    </script>
+
+    <script>
+        const eyeHead = document.querySelector('.header__wrap__content__eye');
+
+        if (getComputedStyle(eyeHead).display == 'block') {
+            eyeHead.id = 'specialButton';
+        } else {
+            eyeHead.style.display = 'none';
+        }
     </script>
 </body>
 </html>

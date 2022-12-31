@@ -8,6 +8,7 @@
 
 html { 
     overflow-x: hidden; 
+    overflow-y: scroll;
 }​
 
 *, *::before, *::after {
@@ -63,6 +64,7 @@ div, a, button, span, p {
 @import '../scss/blocks/intro';
 @import '../scss/blocks/cards';
 @import '../scss/blocks/legal';
+@import '../scss/blocks/privacy';
 
 @import '../scss/blocks/modals';
 
